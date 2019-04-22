@@ -5,6 +5,6 @@ export default (state = {}, action) => {
         case FETCH_TODOS:
             return action.payload;
         default: 
-            return state;
+            return state
     }
 }

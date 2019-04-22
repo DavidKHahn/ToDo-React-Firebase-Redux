@@ -1,5 +1,5 @@
 import {todosRef} from '../firebase';
-const FETCH_TODOS = 'FETCH_TODOS';
+import {FETCH_TODOS} from './types';
 
 export const addToDo = newToDo => async dispatch => {
     todosRef.push().set(newToDo);

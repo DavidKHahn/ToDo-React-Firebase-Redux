@@ -58,7 +58,7 @@ class List extends Component {
     );
   }
   componentWillMount() {
-    this.props.fetchTodos();
+    this.props.fetchToDos();
   }
   render() {
     const {showForm} = this.state;
