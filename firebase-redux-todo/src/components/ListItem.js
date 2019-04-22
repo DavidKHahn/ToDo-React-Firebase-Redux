@@ -14,7 +14,7 @@ class ListItem extends Component {
                 <h4>
                     {todo.title}
                     <span onClick={() => this.handleComplete(todoId)} >
-                        <i>Done</i>
+                    <button>Done</button>
                     </span>
                 </h4>
             </div>

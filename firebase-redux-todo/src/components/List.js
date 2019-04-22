@@ -11,14 +11,14 @@ class List extends Component {
   };
 
   inputChange = e => {
-    this.setState({addFormValue: e.target.value});
+    this.setState({formValue: e.target.value});
   };
 
   formSubmit = e => {
     const {formValue} = this.state;
-    const {addTodo} = this.props;
+    const {addToDo} = this.props;
     e.preventDefault();
-    addTodo({title: formValue});
+    addToDo({title: formValue});
     this.setState({formValue: ""});
   };
 
@@ -63,8 +63,8 @@ class List extends Component {
   render() {
     const {showForm} = this.state;
     return (
-      <div>
-        <div>
+      <div className="to-do-list-container">
+        <div className="row">
           {this.renderForm()}
           {this.renderToDo()}
         </div>
