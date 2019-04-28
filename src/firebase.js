@@ -1,7 +1,7 @@
 import * as firebase from 'firebase';
 
 const config = {
-    apiKey: "AIzaSyBXObdVfcW11CscZCHKcV_l1HBpNVxWeGw",
+    apiKey: process.env.REACT_APP_WEATHER_API_KEY,
     authDomain: "todo-react-firebase-redux.firebaseapp.com",
     databaseURL: "https://todo-react-firebase-redux.firebaseio.com",
     projectId: "todo-react-firebase-redux",
